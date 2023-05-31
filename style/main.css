@@ -1,0 +1,118 @@
+.wrap {
+  max-width: 640px;
+  min-width: 360px;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  border: 1px solid black;
+}
+.wrap header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 640px;
+  min-width: 360px;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.wrap header .innerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+.wrap header .innerHeader .logo {
+  display: block;
+  width: 100px;
+  height: 40px;
+}
+.wrap header .innerHeader .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.wrap header .innerHeader .navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 6px;
+  width: 33px;
+  height: 33px;
+  padding: 3px;
+}
+.wrap header .innerHeader .navBar span {
+  width: 100%;
+  height: 3px;
+  background: #292929;
+}
+.wrap main {
+  margin-top: 70px;
+}
+.wrap main .inner {
+  width: 95%;
+  margin: 0 auto;
+}
+.wrap main .inner .userCard {
+  width: 100%;
+  height: auto;
+  padding: 15px 0 30px;
+  margin: 0 auto 10px;
+  background: #A2D2FF;
+  border-radius: 10px;
+}
+.wrap main .inner .userCard .cardName {
+  width: 90%;
+  height: 30px;
+  margin: 0 auto;
+}
+.wrap main .inner .userCard .cardBarcode {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.wrap main .inner .userCard .cardBarcode span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding-left: 20px;
+  line-height: 30px;
+  background: #eee;
+}
+.wrap main .inner .userCard .cardBarcode div {
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  text-align: center;
+}
+.wrap main .inner .userCard .cardBarcode div img {
+  width: 80%;
+  height: 85%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.wrap main .inner .userCard .cardBarcode div p {
+  width: 100%;
+  height: 15%;
+}
+.wrap footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 640px;
+  min-width: 360px;
+  margin: auto;
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=main.css.map */

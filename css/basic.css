@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container {
+   position: relative;
+   width: 100%;
+   height: 700px;
+   background: #222;
+   box-sizing: border-box;
+}
+
+.slider {
+   width: 100%;
+}
+
+.slider .item {
+   position: relative;
+   height: 700px;
+}
+
+.slider .item .coverBack {
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(255, 0, 0, 0.32);
+}
+
+
+.slider .item .desc {
+   position: absolute;
+   left: 300px;
+   top: 50px;
+   width: 500px;
+}
+
+.slider .item .desc h2 {
+   color: white;
+   font-size: 48px;
+   font-weight: bold;
+   text-transform: uppercase;
+   transition-delay: 0.3s;
+}
+
+.slider .item .desc p {
+   color: #c0c0c0;
+   font-size: 20px;
+   margin: 20px 0;
+   line-height: 1.4;
+   transition-delay: 0.5s;
+}
+
+.slider .item .desc a {
+   display: block;
+   color: #d5d5d5;
+   font-size: 20px;
+   font-weight: bold;
+   transition-delay: 0.7s;
+}
+
+.slider .item .desc h2,
+.slider .item .desc p,
+.slider .item .desc a {
+   transform: translateY(50px);
+   opacity: 0;
+   transition: 1s;
+}
+
+.slider .slick-active .desc h2,
+.slider .slick-active .desc p,
+.slider .slick-active .desc a {
+   transform: translateY(0);
+   opacity: 1;
+}
+
+
+
+.slider .item1 {
+   background: url("../../images (1)/photo1.jpg") no-repeat center /cover;
+}
+
+.slider .item2 {
+   background: url("../../images (1)/photo2.jpg") no-repeat center /cover;
+}
+
+.slider .item3 {
+   background: url("../../images (1)/photo3.jpg") no-repeat center /cover;
+}
+
+.slider .item4 {
+   background: url("../../images (1)/photo4.jpg") no-repeat center /cover;
+}
+
+.prevBtn,
+.nextBtn {
+   position: absolute;
+   top: 50%;
+   color: white;
+   font-size: 50px;
+   transform: translateY(-50%);
+   cursor: pointer;
+}
+
+.prevBtn {
+   left: 50px;
+}
+
+.nextBtn {
+   right: 50px;
+}
+
+.slider .slick-dots {
+   position: absolute;
+   width: auto;
+   left: 120px;
+   bottom: 30px;
+}
+
+.slider .slick-dots li {
+   float: left;
+   width: 15px;
+   height: 15px;
+   background: gray;
+   margin: 0 10px;
+   cursor: pointer;
+   border-radius: 50%;
+}
+
+.slider .slick-dots .slick-active {
+   background: lightgray;
+}
+
+.slider .slick-dots li button {
+   display: none;
+}
