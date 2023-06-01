@@ -5,67 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>병원앱</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="style/main.css">
+    <script defer src="js/main.js"></script>
 </head>
 <body>
     <div class="wrap">
         <header>
-            <div class="innerHeader">
-                <a href="" class="logo"><img src="img/testLogo.png" alt=""></a>
-                <a href="" class="navBar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
+            <a href="" class="logo"></a>
+            <div class="navBar">
+                <span></span><span></span><span></span>
             </div>
         </header>
 
+        <div class="rightMenu">
+            <!-- 추후에 추가 -->
+        </div>
+
         <main>
-            <div class="inner">
-                <section class="userCard">
-                    <div class="cardName">사용자님 안녕하세요</div>
-                    <div class="cardBarcode">
-                        <span>진료카드</span>
-                        <div>
-                            <img src="img/barCode.png" alt="">
-                            <p>이하늘 99999999</p>
-                        </div>
-                    </div>
-                </section>
+            <section class="userCard">
+                <div class="userHello"><span class="userName">사용자</span> 님 안녕하세요</div>
+                <div class="userBarcode"><div></div></div>
+            </section>
 
-                <section>
-                    <ul>
-                        <li><a href="">의료진</a></li>
-                        <li><a href="">진료예약</a></li>
-                        <li><a href="">예약현황</a></li>
-                        <li><a href="">모바일번호표</a></li>
-                        <li><a href="">진료비결제</a></li>
-                        <li><a href="">처방전</a></li>
-                    </ul>
-                </section>
+            <section class="service">
+                <ul>
+                    <li><a href="">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <span>의료진소개</span>
+                    </a></li>
+                    <li><a href="">
+                        <i class="fa-regular fa-calendar-plus"></i>
+                        <span>진료예약</span>
+                    </a></li>
+                    <li><a href="">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>예약현황</span>
+                    </a></li>
+                    <li><a href="">
+                        <i class="fa-solid fa-receipt"></i>
+                        <span>모바일번호표</span>
+                    </a></li>
+                    <li><a href="">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>진료비결제</span>
+                    </a></li>
+                    <li><a href="" class="jsonnn">
+                        <i class="fa-solid fa-capsules"></i>
+                        <span>처방전</span>
+                    </a></li>
+                </ul>
+            </section>
 
-                <section>
-                    <ul>
-                        <li><a href="">진료과</a></li>
-                        <li><a href="">검진센터</a></li>
-                        <li><a href="">장례식장</a></li>
-                    </ul>
-                </section>
-
-                
-            </div>
+            <section class="serve">
+                <div>
+                    <a href="">
+                        <span>진료과안내</span>
+                        <p>
+                            진료과 및<br>의료진 소개
+                        </p>
+                    </a>
+                    <a href="">
+                        <span>건강증진센터</span>
+                        <p>건강증진센터<br>소개</p>
+                    </a>
+                    <a href="">
+                        <span>장례식장</span>
+                        <p>
+                            메디인병원이<br>함께합니다
+                        </p>
+                    </a>
+                </div>
+            </section>
         </main>
 
-        <footer>
-            <a href="">외래</a>
-            <a href="">입원</a>
-            <a href="">홈</a>
-            <a href="">검진</a>
-            <a href="">환자카드</a>
-        </footer>
+        <div class="idCard">
+            <button class="closeCard">X</button>
+            <p class="idName"><span class="userName">사용자</span>님 빠른 쾌유를 기원합니다.</p>
+            <p class="idNumber">환자번호 : <span class="userNumber">999999</span></p>
+            <p class="idDob">생년월일 : <span class="userDob">010101</span></p>
+            <div class="idBar">
+                <div class="userBar"></div>
+            </div>
+        </div>
 
+        <footer>
+            <a href="">
+                <i class="fa-solid fa-stethoscope"></i>
+                <span>외래</span>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-hospital-user"></i>
+                <span>입원</span>
+            </a>
+            <a href="" class="footerHover">
+                <i class="fa-solid fa-house-medical"></i>
+                <span>홈</span>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+                <span>검진</span>
+            </a>
+            <a href="" class="showIdCard">
+                <i class="fa-regular fa-address-card"></i>
+                <span>환자카드</span>
+            </a>
+        </footer>
     </div>
+
 </body>
 </html>
 

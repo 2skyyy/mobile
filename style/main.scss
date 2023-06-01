@@ -1,144 +1,135 @@
 @charset "UTF-8";
+@import './utill.scss';
 
-body{
+body{}
 
-}
-
-.wrap{
+main{
     max-width: 640px;
     min-width: 360px;
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-    border: 1px solid black;
-
-    header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        max-width: 640px;
-        min-width: 360px;
-        margin: auto;
+    
+    .userCard{
         width: 100%;
-        height: 50px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        height: 80px;
+        padding: 0px 20px;
+        background: $mainColor;
+        color: $white;
+        margin-bottom: 50px;
 
-        .innerHeader{
+        .userHello{
+            line-height: 30px;
+
+            .userName{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+        .userBarcode{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            width: 95%;
-            height: 100%;
-            margin: 0 auto;
+            width: 200px;
+            height: 70px;
+            background: $white;
+            box-shadow: $boxShadow;
+            border-radius: 10px;
+            transform: translateY(10px);
 
-            .logo{
-                display: block;
-                width: 100px;
-                height: 40px;
+            div{
+                width: 80%;
+                height: 70%;
+                background: url('../img/barCode.png') center center / contain;
+            }
+        }
+    }
 
-                img{
+    .service{
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+        margin-bottom: 30px;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 10%;
+            width: 100%;
+            height: 200px;
+            color: $white;
+
+            li{
+                width: 30%;
+                height: 45%;
+                background: $mainColor;
+                border-radius: 8px;
+                box-shadow: $boxShadow;
+                
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    row-gap: 5px;
                     width: 100%;
                     height: 100%;
-                    object-fit: contain;
-                }
-            }
 
-            .navBar{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                row-gap: 6px;
-                width: 33px;
-                height: 33px;
-                padding: 3px;
-            
-                span{
-                    width: 100%;
-                    height: 3px;
-                    background: #292929;
-                }
-            }
-        }
-
-        
-    }
-
-    main{
-        margin-top: 70px;
-
-        .inner{
-            width: 95%;
-            margin: 0 auto;
-
-            .userCard{
-                width: 100%;
-                height: auto;
-                padding: 15px 0 30px;
-                margin: 0 auto 10px;
-                background: #A2D2FF;
-                border-radius: 10px;
-
-                .cardName{
-                    width: 90%;
-                    height: 30px;
-                    margin: 0 auto;
-                }
-
-                .cardBarcode{
-                    width: 90%;
-                    height: auto;
-                    margin: 0 auto;
-                    overflow: hidden;
-                    border-radius: 10px;
+                    i{
+                        font-size: 30px;
+                    }
 
                     span{
-                        display: block;
-                        width: 100%;
-                        height: 30px;
-                        padding-left: 20px;
-                        line-height: 30px;
-                        background: #eee;
-                    }
-
-                    div{
-                        padding: 10px;
-                        width: 100%;
-                        height: 150px;
-                        background: #fff;
-                        text-align: center;
-
-                        img{
-                            width: 80%;
-                            height: 85%;
-                            object-fit: contain;
-                        }
-
-                        p{
-                            width: 100%;
-                            height: 15%;
-                        }
+                        font-size: 14px;
                     }
                 }
             }
-
         }
     }
 
-
-    footer{
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        max-width: 640px;
-        min-width: 360px;
-        margin: auto;
+    .serve{
         width: 100%;
-        height: 70px;
-        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        height: auto;
+        padding: 0 20px;
 
+        div{
+            display: flex;
+            justify-content: space-between;
+            row-gap: 5px;
+            width: 99.99%;
+            height: 125px;
+            
+            box-shadow: $boxShadow;
+            border-radius: 8px;
+            overflow: hidden;
+
+            a{
+                display: block;                
+                width: 33.33%;
+                height: 100%;
+                
+                span{
+                    display: block;
+                    width: 100%;
+                    height: 35px;
+                    line-height: 35px;
+                    background: $mainColor;
+                    color: $white;
+                    text-align: center;
+                }
+
+                p{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 90px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $mainColor;
+                    background: #f1f1f1;
+                }
+            }
+        }
     }
 }
-

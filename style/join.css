@@ -145,116 +145,61 @@
   color: #7497CD;
 }
 
-main {
+.wrap {
+  background: #7497CD;
+  color: #fff;
+}
+.wrap .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 640px;
   min-width: 360px;
-}
-main .userCard {
   width: 100%;
-  height: 80px;
-  padding: 0px 20px;
-  background: #7497CD;
-  color: #fff;
-  margin-bottom: 50px;
-}
-main .userCard .userHello {
-  line-height: 30px;
-}
-main .userCard .userHello .userName {
-  font-size: 20px;
-  font-weight: bold;
-}
-main .userCard .userBarcode {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
   height: 70px;
-  background: #fff;
-  box-shadow: 3px 3px 3px rgb(200, 200, 200);
-  border-radius: 10px;
-  transform: translateY(10px);
-}
-main .userCard .userBarcode div {
-  width: 80%;
-  height: 70%;
-  background: url("../img/barCode.png") center center/contain;
-}
-main .service {
-  width: 100%;
-  height: auto;
-  padding: 0 20px;
-  margin-bottom: 30px;
-}
-main .service ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 10%;
-  width: 100%;
-  height: 200px;
-  color: #fff;
-}
-main .service ul li {
-  width: 30%;
-  height: 45%;
-  background: #7497CD;
-  border-radius: 8px;
-  box-shadow: 3px 3px 3px rgb(200, 200, 200);
-}
-main .service ul li a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 5px;
-  width: 100%;
-  height: 100%;
-}
-main .service ul li a i {
-  font-size: 30px;
-}
-main .service ul li a span {
-  font-size: 14px;
-}
-main .serve {
-  width: 100%;
-  height: auto;
-  padding: 0 20px;
-}
-main .serve div {
-  display: flex;
-  justify-content: space-between;
-  row-gap: 5px;
-  width: 99.99%;
-  height: 125px;
-  box-shadow: 3px 3px 3px rgb(200, 200, 200);
-  border-radius: 8px;
-  overflow: hidden;
-}
-main .serve div a {
-  display: block;
-  width: 33.33%;
-  height: 100%;
-}
-main .serve div a span {
-  display: block;
-  width: 100%;
-  height: 35px;
-  line-height: 35px;
-  background: #7497CD;
-  color: #fff;
-  text-align: center;
-}
-main .serve div a p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 90px;
-  text-align: center;
-  font-size: 14px;
+  padding: 10px 20px;
   font-weight: bold;
-  color: #7497CD;
-  background: #f1f1f1;
-}/*# sourceMappingURL=main.css.map */
+}
+.wrap .head .backHome {
+  position: absolute;
+  left: 20px;
+}
+.wrap main {
+  padding: 30px 20px;
+}
+.wrap main div .joinLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 4px;
+  margin: 0 auto 50px;
+  border-radius: 8px;
+  background: #fff;
+}
+.wrap main div .joinLine div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #7497CD;
+}
+.wrap main div .joinStep1 {
+  width: 100%;
+}
+.wrap main div .joinStep1 #step1Id,
+.wrap main div .joinStep1 #step1Pw {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+}
+.wrap main div .joinStep1 #step1Id {
+  margin: 0 auto 10px;
+}
+.wrap main div .joinStep1 #step1Pw {
+  margin: 0 auto;
+}/*# sourceMappingURL=join.css.map */

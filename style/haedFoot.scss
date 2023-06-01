@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import './utill.scss';
+
+.wrap{
+    position: relative;
+    max-width: 640px;
+    min-width: 360px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    border: 1px solid black;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 640px;
+        min-width: 360px;
+        width: 100%;
+        height: 70px;
+        padding: 10px 20px;
+        background: $mainColor;
+
+        .logo{
+            display: block;
+            width: 100px;
+            height: 30px;
+            background: url('../img/logo.png') center center / contain;
+        }
+
+        .navBar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 5px;
+            width: 25px;
+            height: 25px;
+
+            span{
+                width: 100%;
+                height: 3px;
+                border-radius: 5px;
+                background: $white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .rightMenu{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 90%;
+        height: 100%;
+        background: pink;
+        z-index: 98;
+    }
+
+    .idCard{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 270px;
+        height: 180px;
+        background: $white;
+        border-radius: 8px;
+        box-shadow: $boxShadow;
+        z-index: 99;
+
+        .closeCard{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: -5px;
+            right: -5px;
+            font-size: 18px;
+            font-weight: bold;
+            color: $mainColor;
+            background: $white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: $boxShadow;
+        }
+
+        .idName{
+            display: flex;
+            align-items: center;
+            height: 40px;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            background: $mainColor;
+            font-size: 13px;
+            color: $white;
+
+            .userName{
+                font-size: 18px;
+                font-weight: bold;
+                margin-right: 6px;
+            }
+        }
+
+        .idNumber,
+        .idDob{
+            text-align: center;
+        }
+
+        .idNumber{}
+
+        .idDob{
+            margin-bottom: 3px;
+        }
+
+        .idBar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 85%;
+            height: 65px;
+            margin: 0 auto;
+
+            .userBar{
+                width: 80%;
+                height: 70%;
+                background: url('../img/barCode.png') center center / contain;
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 640px;
+        min-width: 360px;
+        margin: auto;
+        padding: 0 20px;
+        width: 100%;
+        height: 70px;
+        border-top: 1px solid lightgray;
+        color: lightgray;
+
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 3px;
+            flex: 1;
+            height: 50px;
+
+            i{
+                font-size: 20px;
+            }
+
+            span{}
+        }
+
+        .footerHover{
+            color: $mainColor;
+        }
+    }
+}
