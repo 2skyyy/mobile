@@ -1,7 +1,9 @@
 $mainColor: #7497CD;
 $white: #fff;
 $boxShadow : 3px 3px 3px rgb(200, 200, 200);
+$borderRadius : 8px;
 
+//헤더, 푸터 등 공통 css
 .wrap{
     position: relative;
     max-width: 640px;
@@ -66,9 +68,9 @@ $boxShadow : 3px 3px 3px rgb(200, 200, 200);
         left: 50%;
         transform: translate(-50%, -50%);
         width: 270px;
-        height: 180px;
+        height: 200px;
         background: $white;
-        border-radius: 8px;
+        border-radius: $borderRadius;
         box-shadow: $boxShadow;
         z-index: 99;
 
@@ -105,14 +107,9 @@ $boxShadow : 3px 3px 3px rgb(200, 200, 200);
         }
 
         .idNumber,
-        .idDob{
+        .idDob,
+        .idGender{
             text-align: center;
-        }
-
-        .idNumber{}
-
-        .idDob{
-            margin-bottom: 3px;
         }
 
         .idBar{

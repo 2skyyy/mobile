@@ -144,151 +144,6 @@
 }
 
 .wrap {
-  position: relative;
-  max-width: 640px;
-  min-width: 360px;
-  width: 100%;
-  height: 100vh;
-  margin: auto;
-  border: 1px solid black;
-}
-.wrap header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 640px;
-  min-width: 360px;
-  width: 100%;
-  height: 70px;
-  padding: 10px 20px;
-  background: #7497CD;
-}
-.wrap header .logo {
-  display: block;
-  width: 100px;
-  height: 30px;
-  background: url("../img/logo.png") center center/contain;
-}
-.wrap header .navBar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 5px;
-  width: 25px;
-  height: 25px;
-}
-.wrap header .navBar span {
-  width: 100%;
-  height: 3px;
-  border-radius: 5px;
-  background: #fff;
-  cursor: pointer;
-}
-.wrap .rightMenu {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 90%;
-  height: 100%;
-  background: pink;
-  z-index: 98;
-}
-.wrap .idCard {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 270px;
-  height: 200px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 3px 3px 3px rgb(200, 200, 200);
-  z-index: 99;
-}
-.wrap .idCard .closeCard {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: -5px;
-  right: -5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #7497CD;
-  background: #fff;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 3px 3px 3px rgb(200, 200, 200);
-}
-.wrap .idCard .idName {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 10px 20px;
-  margin-bottom: 15px;
-  background: #7497CD;
-  font-size: 13px;
-  color: #fff;
-}
-.wrap .idCard .idName .userName {
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 6px;
-}
-.wrap .idCard .idNumber,
-.wrap .idCard .idDob,
-.wrap .idCard .idGender {
-  text-align: center;
-}
-.wrap .idCard .idBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-  height: 65px;
-  margin: 0 auto;
-}
-.wrap .idCard .idBar .userBar {
-  width: 80%;
-  height: 70%;
-  background: url("../img/barCode.png") center center/contain;
-}
-.wrap footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  max-width: 640px;
-  min-width: 360px;
-  margin: auto;
-  padding: 0 20px;
-  width: 100%;
-  height: 70px;
-  border-top: 1px solid lightgray;
-  color: lightgray;
-}
-.wrap footer a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 3px;
-  flex: 1;
-  height: 50px;
-}
-.wrap footer a i {
-  font-size: 20px;
-}
-.wrap footer .footerHover {
-  color: #7497CD;
-}
-
-.wrap {
   background: #7497CD;
   color: #fff;
 }
@@ -306,7 +161,6 @@
 .wrap .head .backHome {
   position: absolute;
   left: 20px;
-  cursor: pointer;
 }
 .wrap main {
   padding: 30px 20px;
@@ -322,6 +176,7 @@
 }
 .wrap main .nextStep {
   position: absolute;
+  bottom: 20px;
   left: 50%;
   transform: translate(-50%);
   width: 90%;
@@ -409,18 +264,4 @@
 .wrap main .joinWrap .joinStep3 span {
   font-size: 18px;
   font-weight: bold;
-}
-.wrap main .joinWrap .nextStep {
-  bottom: 20px;
-}
-
-main span {
-  display: block;
-  margin-bottom: 3px;
-}
-main .loginBtn {
-  bottom: 80px;
-}
-main .joinBtn {
-  bottom: 20px;
-}/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=joinAndLogin.css.map */

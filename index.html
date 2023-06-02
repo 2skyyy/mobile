@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="style/main.css">
-    <script defer src="js/main.js"></script>
+    <script type="module" defer src="js/utill.js"></script>
+    <script type="module" defer src="js/main.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -25,7 +26,7 @@
 
         <main>
             <section class="userCard">
-                <div class="userHello"><span class="userName">사용자</span> 님 안녕하세요</div>
+                <div class="userHello"><span class="userName"></span> 님 안녕하세요</div>
                 <div class="userBarcode"><div></div></div>
             </section>
 
@@ -35,7 +36,7 @@
                         <i class="fa-solid fa-user-doctor"></i>
                         <span>의료진소개</span>
                     </a></li>
-                    <li><a href="">
+                    <li><a href="reservition.html">
                         <i class="fa-regular fa-calendar-plus"></i>
                         <span>진료예약</span>
                     </a></li>
@@ -82,9 +83,10 @@
 
         <div class="idCard">
             <button class="closeCard">X</button>
-            <p class="idName"><span class="userName">사용자</span>님 빠른 쾌유를 기원합니다.</p>
-            <p class="idNumber">환자번호 : <span class="userNumber">999999</span></p>
-            <p class="idDob">생년월일 : <span class="userDob">010101</span></p>
+            <p class="idName"><span class="userName"></span>님 빠른 쾌유를 기원합니다.</p>
+            <p class="idNumber">환자번호 : <span class="userNum"></span></p>
+            <p class="idDob">생년월일 : <span class="userDob"></span></p>
+            <p class="idGender">성별 : <span class="userGender"></span></p>
             <div class="idBar">
                 <div class="userBar"></div>
             </div>

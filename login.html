@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>로그인</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="style/login.css">
+    <script type="module" defer src="js/utill.js"></script>
+    <script type="module" defer src="js/login.js"></script>
 </head>
 <body>
-    
+    <div class="wrap">
+        <div class="head">
+            <div class="backHome"><i class="fa-solid fa-chevron-left"></i></div>
+            로그인
+        </div>
+
+        <main>
+            <span>아이디</span>
+            <input type="text" name="" id="loginId" class="inputs">
+            <span>비밀번호</span>
+            <input type="password" name="" id="loginPw" class="inputs">
+            <button class="nextStep loginBtn">로그인</button>
+            <button class="nextStep joinBtn">회원가입</button>
+        </main>
+        
+    </div>
 </body>
 </html>

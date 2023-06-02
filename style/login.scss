@@ -1,2 +1,20 @@
 @charset "UTF-8";
 @import './utill.scss';
+@import './join.scss';
+
+main{
+    span{
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .loginBtn{
+        bottom: 80px;
+    }
+
+    .joinBtn{
+        bottom: 20px;
+    }
+}
+
+//나머지는 join 페이지에서 import

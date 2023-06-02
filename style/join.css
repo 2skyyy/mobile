@@ -57,7 +57,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 270px;
-  height: 180px;
+  height: 200px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 3px 3px 3px rgb(200, 200, 200);
@@ -93,11 +93,9 @@
   margin-right: 6px;
 }
 .wrap .idCard .idNumber,
-.wrap .idCard .idDob {
+.wrap .idCard .idDob,
+.wrap .idCard .idGender {
   text-align: center;
-}
-.wrap .idCard .idDob {
-  margin-bottom: 3px;
 }
 .wrap .idCard .idBar {
   display: flex;
@@ -163,11 +161,35 @@
 .wrap .head .backHome {
   position: absolute;
   left: 20px;
+  cursor: pointer;
 }
 .wrap main {
   padding: 30px 20px;
 }
-.wrap main div .joinLine {
+.wrap main .inputs {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+.wrap main .nextStep {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  height: 50px;
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+  color: #7497CD;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.wrap main .joinWrap .joinLine {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,7 +199,7 @@
   border-radius: 8px;
   background: #fff;
 }
-.wrap main div .joinLine div {
+.wrap main .joinWrap .joinLine div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,19 +209,62 @@
   border-radius: 50%;
   background: #7497CD;
 }
-.wrap main div .joinStep1 {
+.wrap main .joinWrap .joinLine .step {
+  background: #fff;
+  color: #7497CD;
+}
+.wrap main .joinWrap .joinStep1 {
+  width: 100%;
+  text-align: left;
+}
+.wrap main .joinWrap .joinStep1 span {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+.wrap main .joinWrap .joinStep2 {
+  display: none;
   width: 100%;
 }
-.wrap main div .joinStep1 #step1Id,
-.wrap main div .joinStep1 #step1Pw {
-  width: 80%;
-  height: 30px;
-  border: none;
-  border-radius: 15px;
+.wrap main .joinWrap .joinStep2 .joinStep2Box {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  color: #7497CD;
 }
-.wrap main div .joinStep1 #step1Id {
-  margin: 0 auto 10px;
+.wrap main .joinWrap .joinStep2 .joinStep2Box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }
-.wrap main div .joinStep1 #step1Pw {
-  margin: 0 auto;
+.wrap main .joinWrap .joinStep2 .joinStep2Box label {
+  line-height: 30px;
+}
+.wrap main .joinWrap .joinStep2 .joinStep2Box .err {
+  display: none;
+}
+.wrap main .joinWrap .err {
+  display: inline;
+  margin-left: 10px;
+  color: red;
+  font-size: 13px;
+}
+.wrap main .joinWrap .joinStep3 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 100px;
+  border-radius: 8px;
+}
+.wrap main .joinWrap .joinStep3 span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.wrap main .joinWrap .nextStep {
+  bottom: 20px;
 }/*# sourceMappingURL=join.css.map */

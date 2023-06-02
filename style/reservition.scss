@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import './utill.scss';
+
+
+main{
+    max-width: 640px;
+    min-width: 360px;
+    width: 100%;
+    padding: 20px;
+
+    .choice{
+        width: 100%;
+        height: auto;
+
+        .choiceDeparment,
+        .choiceDoctor,
+        .choiceDate{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 7px;
+            width: 100%;
+            height: 70px;
+            background: $mainColor;
+            border-radius: $borderRadius;
+            cursor: pointer;
+
+            p{
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        
+        .choiceDeparment{
+            margin-bottom: 7px;
+        }
+
+        .choiceDoctor{
+            margin-bottom: 7px;
+        }
+
+        .choiceDate{
+            margin-bottom: 15px;
+        }
+
+        #choiceInput{
+            width: 100%;
+            height: 200px;
+            margin-bottom: 50px;
+            border-radius: $borderRadius;
+            border: 2px solid $mainColor;
+            outline: none;
+        }
+    }
+    
+    .reservitionBtn{
+        width: 100%;
+        height: 50px;
+        border-radius: $borderRadius;
+        background: $mainColor;
+        border: none;
+        font-size: 18px;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+.deparment,
+.doctor,
+.date{
+    display: none;
+    position: fixed;
+    border: 1px solid black;
+    max-width: 640px;
+    min-width: 360px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: 999;
+    background: $white;
+}
+
+.choiceHead{    //deparment, doctor, date 공통 사용
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding-left: 20px;
+    background: $mainColor;
+}
+
+.choiceBox{    //deparment, doctor, date 공통 사용
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+    .newA,
+    .newDc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 70px;
+        background: $mainColor;
+        border-radius: 4px;
+        text-align: center; 
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+.deparment{
+
+    
+
+    .choice1{
+        width: 90%;
+        height: 40px;
+        margin: 50px auto;
+        border-bottom: 2px solid $mainColor;
+
+        .choice1Item{
+            font-size: 20px;
+            color: $mainColor;
+        }
+    }
+
+    .nextChoice{
+        width: 90%;
+        height: 50px;
+        margin: 0 5%;
+        background: $mainColor;
+        border-radius: $borderRadius;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.doctor{
+}
+
+.date{
+}

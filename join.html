@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>회원가입</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="style/join.css">
-    <script defer src="js/join.js"></script>
-
+    <script type="module" defer src="js/utill.js"></script>
+    <script type="module" defer src="js/join.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -19,16 +19,47 @@
         </div>
 
         <main>
-            <div>
+            <div class="joinWrap">
                 <div class="joinLine">
-                    <div class="step1">1</div>
+                    <div class="step step1">1</div>
                     <div class="step2">2</div>
                     <div class="step3">3</div>
                 </div>
 
                 <div class="joinStep1">
-                    <input type="text" name="" id="step1Id">
-                    <input type="password" name="" id="step1Pw">
+                    <span>이름<span class="errStep1 errName"></span></span>
+                    <input type="text" id="step1Name" class="inputs" placeholder="이름을 입력해주세요">
+                    <span>생년월일<span class="errStep1 errDob"></span></span>
+                    <input type="number" name="" id="step1Dob" class="inputs" placeholder="주민번호 앞 7자리를 입력해주세요">
+                    <span>아이디<span class="errStep1 errId"></span></span>
+                    <input type="text" name="" id="step1Id" class="inputs" placeholder="사용하실 아이디 6~10글자를 입력해주세요">
+                    <span>비밀번호<span class="errStep1 errpw"></span></span>
+                    <input type="password" name="" id="step1Pw" class="inputs" placeholder="사용하실 비밀번호 6~10글자를 입력해주세요">
+                    <span>비밀번호 확인<span class="errStep1 errpw2"></span></span>
+                    <input type="password" name="" id="step1Pw2" class="inputs" placeholder="비밀번호 확인">
+                    <button class="nextStep nextStep1">다음</button>
+                </div>
+
+                <div class="joinStep2">
+                    <div class="joinStep2Box">
+                        <h3>이용약관</h3>
+                        <label for="spep2List1">
+                            <p><input type="checkbox" name="" id="spep2List1"> 개인정보 수집 동의 (필수)</p>
+                        </label>
+                        <label for="spep2List2">
+                            <p><input type="checkbox" name="" id="spep2List2"> 환자 의무기록정보 조회 동의 (필수)</p>
+                        </label>
+                        <label for="spep2List3">
+                            <p><input type="checkbox" name="" id="spep2List3"> 알림 수신 동의 (선택)</p>
+                        </label>
+                        <span class="err errStep2">필수 약관에 모두 동의해주세요</span>
+                    </div>
+                    <button class="nextStep nextStep2">다음</button>
+                </div>
+
+                <div class="joinStep3">
+                    회원가입이 완료되었습니다.
+                    <button class="nextStep nextStep3">메인으로</button>
                 </div>
             </div>
         </main>

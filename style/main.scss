@@ -62,7 +62,7 @@ main{
                 width: 30%;
                 height: 45%;
                 background: $mainColor;
-                border-radius: 8px;
+                border-radius: $borderRadius;
                 box-shadow: $boxShadow;
                 
                 a{
@@ -97,9 +97,8 @@ main{
             row-gap: 5px;
             width: 99.99%;
             height: 125px;
-            
             box-shadow: $boxShadow;
-            border-radius: 8px;
+            border-radius: $borderRadius;
             overflow: hidden;
 
             a{

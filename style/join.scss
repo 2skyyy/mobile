@@ -19,14 +19,41 @@
         .backHome{
             position: absolute;
             left: 20px;
+            cursor: pointer;
         }
     }
 
     main{
         padding: 30px 20px;
 
-        div{
+        .inputs{ //joinStep1 child임 login페이지로 export 시킬거라 밖으로 뺌
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            margin-bottom: 8px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+        }
 
+        .nextStep{ 
+            //nextStep1, nextStep2, nextStep3 공통
+            //login페이지로 export 시킬거라 밖으로 뺌
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 90%;
+            height: 50px;
+            border-radius: 8px;
+            background: $white;
+            border: none;
+            color: $mainColor;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .joinWrap{
             .joinLine{
                 display: flex;
                 justify-content: space-between;
@@ -47,26 +74,77 @@
                     border-radius: 50%;
                     background: $mainColor;
                 }
+
+                .step{
+                    background: $white;
+                    color: $mainColor;
+                }
             }
 
             .joinStep1{
                 width: 100%;
+                text-align: left;
 
-                #step1Id,
-                #step1Pw{
-                    width: 80%;
-                    height: 30px;
-                    border: none;
-                    border-radius: 15px;
+                span{
+                    display: inline-block;
+                    margin-bottom: 7px;
+                    font-size: 14px;
                 }
+            }
 
-                #step1Id{
-                    margin: 0 auto 10px;
-                }
+            .joinStep2{
+                display: none;
+                width: 100%;
 
-                #step1Pw{
-                    margin: 0 auto;
+                .joinStep2Box{
+                    width: 100%;
+                    height: 200px;
+                    padding: 10px;
+                    background: $white;
+                    border-radius: 8px;
+                    color: $mainColor;
+
+                    h3{
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                    label{
+                        line-height: 30px;
+                    }
+
+                    .err{
+                        display: none;
+                    }
                 }
+            }
+
+            .err{   //joinStep1, joinStep2 공통 사용
+                display: inline;
+                margin-left: 10px;
+                color: red;
+                font-size: 13px;
+            }
+
+            .joinStep3{
+                display: none;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                margin-top: 100px;
+                border-radius: $borderRadius;
+
+                span{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+
+            .nextStep{
+                bottom: 20px;
             }
         }
     }
